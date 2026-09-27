@@ -33,23 +33,29 @@ in enterprise test suites.
 
 ## Architecture
 
+```text
 selenium-csharp-ui-tests/
-├── Base/
-│ └── BaseTest.cs # Chrome setup, implicit wait, teardown
-├── Pages/ # Page Object Model — one class per page
-│ ├── LoginPage.cs
-│ ├── DropdownPage.cs
-│ ├── CheckboxPage.cs
-│ ├── AlertPage.cs
-│ └── DynamicLoadingPage.cs
-├── Tests/ # NUnit test classes — one per feature
-│ ├── LoginTests.cs
-│ ├── DropdownTests.cs
-│ ├── CheckboxTests.cs
-│ ├── AlertTests.cs
-│ └── DynamicLoadingTests.cs
-└── .github/workflows/
-└── ci.yml # GitHub Actions pipeline
+├── .github/
+│   └── workflows/
+│       └── ci.yml                 # GitHub Actions pipeline
+├── README.md
+└── selenium-csharp-ui-tests/
+    ├── Base/
+    │   └── BaseTest.cs            # Chrome setup, implicit wait, teardown
+    ├── Pages/                     # Page Object Model — one class per page
+    │   ├── LoginPage.cs
+    │   ├── DropdownPage.cs
+    │   ├── CheckboxPage.cs
+    │   ├── AlertPage.cs
+    │   └── DynamicLodingPage.cs
+    ├── Tests/                     # NUnit test classes — one per feature
+    │   ├── LoginTest.cs
+    │   ├── DropdownTest.cs
+    │   ├── CheckboxTest.cs
+    │   ├── AlertTest.cs
+    │   └── DynamicLoadingTest.cs
+    └── selenium-csharp-ui-tests.csproj
+```
 
 
 ---
